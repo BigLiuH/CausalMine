@@ -1,0 +1,14 @@
+2025-12-15 15:41:11,341 - CNSDiff - INFO - ### model configuration ###
+2025-12-15 15:41:11,341 - CNSDiff - INFO - training.set=./dataset/yelp2018/train.txt
+2025-12-15 15:41:11,341 - CNSDiff - INFO - test.set=./dataset/yelp2018/test_ood.txt
+2025-12-15 15:41:11,341 - CNSDiff - INFO - model={'name': 'CNSDiff', 'type': 'graph'}
+2025-12-15 15:41:11,341 - CNSDiff - INFO - item.ranking.topN=[10, 20]
+2025-12-15 15:41:11,341 - CNSDiff - INFO - embedding.size=128
+2025-12-15 15:41:11,341 - CNSDiff - INFO - max.epoch=1000
+2025-12-15 15:41:11,341 - CNSDiff - INFO - batch.size=2048
+2025-12-15 15:41:11,341 - CNSDiff - INFO - learning.rate=0.01
+2025-12-15 15:41:11,342 - CNSDiff - INFO - reg.lambda=0.0001
+2025-12-15 15:41:11,342 - CNSDiff - INFO - CNSDiff={'n_layer': 2}
+2025-12-15 15:41:11,342 - CNSDiff - INFO - output=./results/
+2025-12-15 15:42:59,991 - CNSDiff - INFO - ###Evaluation Results###
+2025-12-15 15:42:59,993 - CNSDiff - INFO - ['Top 10\n', 'Hit Ratio:0.0\n', 'Precision:0.0\n', 'Recall:0.0\n', 'NDCG:0.0\n', 'Top 20\n', 'Hit Ratio:0.00621\n', 'Precision:0.00055\n', 'Recall:0.00549\n', 'NDCG:0.00153\n']
