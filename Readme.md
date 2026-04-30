@@ -1,16 +1,17 @@
-# DualFeat: A Dual-Layer Feature Extraction Framework with Multi-Source Integration for CircRNA-miRNA Interaction Prediction
+# CausalMine: Causally regularized hard negative mining eliminates pseudo-negative interference for robust circRNA–miRNA interaction prediction
 ## Introduction
 
-**DualFeat** is a computational framework designed to predict circRNA–miRNA interactions (CMIs). The method integrates **multi-source biological information** (sequence features, disease associations, and known interaction networks) and applies a **dual-layer feature extraction strategy** for improved predictive performance.
+**CausalMine** is a computational framework designed to predict circRNA–miRNA interactions (CMIs). The method integrates multi-source biological information (sequence features, disease associations, and known interaction networks) and applies a hierarchical feature extraction strategy combined with causally regularized hard negative mining for improved predictive performance.
 
 Key components include:
 
 * **Multi-source heterogeneous similarity construction**
 * **Node2vec** for shallow network embedding
-* **Graph Attention Networks (GATs)** for deep structural feature learning
-* **CatBoost** for late fusion across multi-source features
+* **Causally regularized diffusion-guided hard negative sampling**
+* **GAT enhanced with CBAM** and convolutional aggregation for deep structural feature learning
+* **MLP** for late fusion across multi-source features
 
-DualFeat achieves significant improvements over state-of-the-art baselines in terms of AUC, AUPR, ACC, and F1-score, and case studies confirm the biological reliability of its predictions.
+CausalMine achieves significant improvements over state-of-the-art baselines in terms of AUC, AUPR, ACC, and F1-score, and effectively reduces training noise by eliminating pseudo-negative samples.
 
 ## Environment
 
