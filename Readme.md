@@ -52,7 +52,8 @@ DualFeat Project
 │   ├── DeepWalk
 │   ├── Node2vec
 │   ├── Model
-│   └── Similarity
+│   ├── Similarity
+│   └──Negative Sampling
 │
 └── Dataset
     ├── Base Dataset
@@ -68,8 +69,9 @@ Contains all scripts related to feature extraction, model training, and similari
 
 - **DeepWalk/** – Implements the DeepWalk algorithm to generate shallow network embeddings for nodes.  
 - **Node2vec/** – Implements Node2vec for node embedding, providing vector representations of circRNAs and miRNAs.  
-- **Model/** – Contains Graph Attention Network (GAT) scripts for deep feature extraction and interaction prediction.  
-- **Similarity/** – Computes various similarity matrices including circRNA function similarity, miRNA function similarity, GIP similarity, and disease semantic similarity.  
+- **Model/** – Contains **GAT enhanced with CBAM** and convolutional aggregation for deep feature extraction and interaction prediction. 
+- **Similarity/** – Computes various similarity matrices including circRNA function similarity, miRNA function similarity, GIP similarity, and disease semantic similarity.
+- **Negative Sampling/** Implements causally regularized diffusion-guided hard negative mining, used to generate high-quality negative samples and reduce pseudo-negative noise.
 
 **Dataset**  
 Stores all data required for training, validation, and feature generation:
