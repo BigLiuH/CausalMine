@@ -995,8 +995,8 @@ class LGCN_Encoder(nn.Module):
         import numpy as np
         import os
 
-        item_emb_path = 'F:/PyCharmProject/CRDHNS/dataset/my_data/ciRNAEmbed.npy'
-        user_emb_path = 'F:/PyCharmProject/CRDHNS/dataset/my_data/miRNAEmbed.npy'
+        item_emb_path = 'F:/PyCharmProject/CNSDiff_Standalone/dataset/my_data/ciRNAEmbed.npy'
+        user_emb_path = 'F:/PyCharmProject/CNSDiff_Standalone/dataset/my_data/miRNAEmbed.npy'
 
         if os.path.exists(user_emb_path) and os.path.exists(item_emb_path):
             print(f"Loading pretrained embeddings from {user_emb_path} and {item_emb_path}...")
@@ -1218,7 +1218,7 @@ def run_and_export():
     # 1. Load Configuration
     print("Loading configuration...")
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    conf_path = os.path.join(current_dir, 'conf', 'CRDHNS.yaml')
+    conf_path = os.path.join(current_dir, 'conf', 'CNSDiff.yaml')
     conf = ModelConf(conf_path)
 
     # 2. Load Data
